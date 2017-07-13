@@ -11,9 +11,15 @@ $('.btn-mushrooms').on('click', function(){
 $('.btn-green-peppers').on('click', function(){
 	$('[class^=green-pepper]').fadeToggle();
 });
+$ ('.sauce').toggleClass('sauce-white',false);
+$ ('.btn-sauce').on('click', function(){
+	$('.sauce').toggleClass('sauce-white');
+});
 
-
-
+$ ('.crust').toggleClass('crust-gluten-free',false);
+$ ('.btn-crust').on('click', function(){
+	$('.crust').toggleClass('crust-gluten-free');
+});
 
 
 });
