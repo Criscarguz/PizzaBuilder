@@ -17,17 +17,18 @@ $( document ).ready(function() {
 	//$ ('.sauce').toggleClass('sauce-white',false);
 	$ ('.btn-sauce').on('click', function(){
 		$('.sauce').toggleClass('sauce-white');
-		$('.btn-sauce').toggleClass('active', false);
+		$('.btn-sauce').toggleClass('active');
 	});
-	$('section').removeClass('sauce-white');
-	$('section').removeClass('crust-gluten-free');
-	$('.btn-sauce').removeClass('active');
-	$('.btn-crust').removeClass('active');
-	//$ ('.crust').toggleClass('crust-gluten-free',false);
 	$ ('.btn-crust').on('click', function(){
 		$('.crust').toggleClass('crust-gluten-free');
 		$('.btn-crust').toggleClass('active');
 	});
 	
+	$('section').removeClass('sauce-white');
+	$('section').removeClass('crust-gluten-free');
+	$('.btn-sauce').removeClass('active');
+	$('.btn-crust').removeClass('active');
+	//$ ('.crust').toggleClass('crust-gluten-free',false);
+
 
 });
